@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "@prisma/orm-postgres": "^8.0.0-rc.17",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@prisma/cli-engine": "^0.7.0",
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.6.5",
+    "prisma": "^8.0.0-rc.22",
+    "typescript": "^6.0.3"
+  },
+  "name": "logher-backend",
+  "version": "1.0.0",
+  "description": "- Typescript\r - ExpressJS\r - Bcrypt\r - Prisma 8\r - Zod\r - JsonWebToken",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "contract:emit": "prisma contract emit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totalox/Logher-backend.git"
+  },
+  "keywords": [],
+  "author": "totalox <totalodev@outlook.com> (https://totalo.fun/)",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/totalox/Logher-backend/issues"
+  },
+  "homepage": "https://github.com/totalox/Logher-backend#readme"
+}
