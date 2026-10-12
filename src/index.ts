@@ -1,5 +1,6 @@
 import express, { type Response, type Request, type Express } from "express";
-import { Auth } from "./routers/userRouter.ts";
+import { Register } from "./routers/createRouter.ts";
+import { Login } from "./routers/loginRouter.ts";
 
 const app: Express = express();
 
@@ -12,7 +13,9 @@ app.get("/", (req: Request, res: Response) => {
 app.use(express.json());
 
 // Routers
-app.use("/", Auth);
+app.use("/register", Register);
+
+app.use("/login", Login);
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);

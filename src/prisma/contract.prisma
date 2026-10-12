@@ -4,8 +4,6 @@ model User {
   id           Int      @id @default(autoincrement())
   name         String
   email        String   @unique
-  passwordHash String
+  password String
   role         String   @default("USER")
-  createdAt    DateTime @default(now())
-  updatedAt    temporal.updatedAt()
 }
